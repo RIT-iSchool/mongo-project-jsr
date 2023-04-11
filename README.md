@@ -45,7 +45,9 @@
 
 ## You should see output similar to this:
 
-* Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
-Open your web browser and go to the URL http://localhost:9000/ (or http://127.0.0.1:9000/). You should see the home page of the application.
+   ```
+   Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+   Open your web browser and go to the URL http://localhost:9000/ (or http://127.0.0.1:9000/). You should see the home page of the application.
+   ```
 
 Use the search forms to query the database and view the search results.
