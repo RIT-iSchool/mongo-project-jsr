@@ -39,7 +39,7 @@ The details.html template displays the details of a single record, including its
 
 6. Run the following command to start the Flask application:
    ```export FLASK_APP=app.py
-       flask run```
+       flask run
 
 ## You should see output similar to this:
 
