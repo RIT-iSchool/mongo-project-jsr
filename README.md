@@ -43,7 +43,7 @@
    flask run
    ```
 
-## You should see output similar to this:
+## You should see output similar to this -
 
    ```
    Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
