@@ -8,6 +8,17 @@
 * Python 
 * HTML 
 * CSS
+## Dataset -
+   California Clinics Dataset - https://healthdata.gov/dataset/State-of-California-Geocoded-Providers-2019-Califo/yg3r-d5zt
+   ### Attributes:
+   *ID
+   *Clinic
+   *Address
+   *City
+   *Phone
+   *ClinicServiceType
+   *StandardLatitude
+   *StandardLongitude
 
 # Overview
 * This is a Flask application that connects to a MongoDB database and performs various operations such as inserting values, querying data, and retrieving images. It also includes templates for displaying data and forms for searching and adding comments.
