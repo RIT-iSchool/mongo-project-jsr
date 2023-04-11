@@ -1,6 +1,14 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10442999&assignment_repo_type=AssignmentRepo)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10442999&assignment_repo_type=AssignmentRepo)
 
+## Technologies Used - 
+
+* MongoDB
+* Flask
+* Python 
+* HTML 
+* CSS
+
 # Overview
 * This is a Flask application that connects to a MongoDB database and performs various operations such as inserting values, querying data, and retrieving images. It also includes templates for displaying data and forms for searching and adding comments.
 
@@ -24,13 +32,6 @@
 
 * The details.html template displays the details of a single record, including its name, address, phone number, comments, and an image if one exists. It also contains a form for adding comments to the record.
 
-## Technologies Used - 
-
-* MongoDB
-* Flask
-* Python 
-* HTML 
-* CSS
 
 ## Steps - 
 
