@@ -3,12 +3,15 @@ import subprocess as sp
 import re 
 from pymongo import MongoClient
 from gridfs import GridFS
+from bson.objectid import ObjectId
+from flask import send_file
 
 app = Flask("myapp")
 
 client = MongoClient()
 db = client.clinic
 myCollection = db.info
+fs = GridFS(db)
 
 @app.route("/")
 def my_home():
@@ -59,9 +62,6 @@ def geosearch():
 
     return render_template("response.html", res=result)
 
-
-from bson.objectid import ObjectId
-
 @app.route('/details/<id>')
 def details(id):
     record = myCollection.find_one({'_id': ObjectId(id)})
@@ -69,19 +69,12 @@ def details(id):
         return "Record not found"
     return render_template('details.html', record=record)
 
-from bson.objectid import ObjectId
-from flask import send_file
-
-fs = GridFS(db)
-
 @app.route('/image/<image_id>')
 def image(image_id):
     # Retrieve an image from the database and return it as a Flask response
     image_id = ObjectId(image_id)
     file = fs.get(image_id)
     return send_file(file, mimetype='image/png')
-
-from bson.objectid import ObjectId
 
 @app.route('/add_comment/<id>', methods=['POST'])
 def add_comment(id):

@@ -2,20 +2,8 @@
 <html>
 <head>
     <title>Clinic Details</title>
-    <style>
-        body {
-            background-color: beige;
-        }
-        strong {
-            font-weight: bold;
-        }
-        input[type="submit"] {
-            margin-top: 10px;
-            margin-bottom: 20px;
-}
-    </style>
 </head>
-<body>
+<body style="background-color: #f1d179; font-family: Arial, sans-serif;">
     <h2>Clinic Details for : {{ record.ClinicName }}</h2>
     
     {% for key, value in record.items() %}
@@ -23,10 +11,12 @@
     {% endfor %}
     
     <form action="{{ url_for('add_comment', id=record['_id']) }}" method="POST">
-        <label for="comment">Add a comment:</label><br>
+        <strong><label for="comment">Add a comment:</label> </strong><br>
         <textarea id="comment" name="comment" rows="8" cols="50"></textarea><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" style="margin-top: 10px; background-color: #1a44ff; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
     </form>
+    <hr style="border: none; border-top: 1px solid #000000; margin: 40px 0;">
+    <h1> {{ record.ClinicName }} :</h1>
     <img src="{{ url_for('image', image_id=record['image_id']) }}" alt="Image">
 </body>
 </html>
