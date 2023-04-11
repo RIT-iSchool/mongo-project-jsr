@@ -38,8 +38,8 @@ The details.html template displays the details of a single record, including its
 5. Open a command prompt or terminal window, enter the JSR venv and navigate to the directory where the app.py file is saved.
 
 6. Run the following command to start the Flask application:
-   ```export FLASK_APP=app.py```
-   ```flask run```
+   ```export FLASK_APP=app.py
+       flask run```
 
 ## You should see output similar to this:
 
