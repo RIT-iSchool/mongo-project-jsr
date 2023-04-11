@@ -1,0 +1,65 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form action="/query"> 
+      Find: <input name="find" type="text"/>
+      <input type="submit"/>
+    </form>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Form</title>
+    <style>
+      body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: beige;
+    color: black; 
+    font-weight: bold; 
+    background-image: '/home/student/JSR/app/templates/background_image.jpeg';
+  }
+  
+  form {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    color: black; 
+    font-weight: bold;
+  }
+  
+  input {
+    font-family: Georgia, serif;
+    color: black; 
+    font-weight: bold; 
+  }
+    </style>
+  </head>
+  <body>
+    <form action="/query"> 
+      Find: <input name="find" type="text"/>
+      <input type="submit"/>
+    </form>
+    <hr>
+    <h2> OR </h2>
+    <hr>
+    <form action="/geosearch">
+      Latitude: <input name="StandardLatitude" type="text"/>
+      Longitude: <input name="StandardLongitude" type="text"/>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
+
+
