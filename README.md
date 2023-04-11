@@ -24,6 +24,14 @@
 
 * The details.html template displays the details of a single record, including its name, address, phone number, comments, and an image if one exists. It also contains a form for adding comments to the record.
 
+## Technologies Used - 
+
+* MongoDB
+* Flask
+* Python 
+* HTML 
+* CSS
+
 ## Steps - 
 
 1. Make sure you have Python installed on your system. If not, download and install it from the official website (https://www.python.org/downloads/).
